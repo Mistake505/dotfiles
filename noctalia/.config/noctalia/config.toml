@@ -7,10 +7,11 @@ order = [ "default", "islands" ]
     [bar.default]
     background_opacity = 0.79999998211860657
     capsule_radius = 0
-    center = [ "clock", "date", "cat_4" ]
+    center = [ "cat_5", "date", "clock" ]
+    enabled = true
     end = [
         "media",
-        "nix_monitor_4",
+        "nix_monitor_5",
         "tray",
         "notifications",
         "clipboard",
@@ -65,9 +66,22 @@ launcher_custom_image = "/home/ckjos/Downloads/nixos-artwork/logo/nix-snowflake-
 launcher_custom_image_colorize = true
 launcher_position = "start"
 margin_edge = 8
+pinned = [
+    "kitty",
+    "librewolf",
+    "org.gnome.Nautilus",
+    "equibop",
+    "org.vinegarhq.Sober",
+    "org.prismlauncher.PrismLauncher",
+    "steam"
+]
 radius = 0
 reserve_space = false
 smart_auto_hide = true
+
+[hooks]
+theme_mode_changed = "noctalia config export > dotfiles/noctalia/.config/noctalia/config.toml"
+wallpaper_changed = "noctalia config export > dotfiles/noctalia/.config/noctalia/config.toml"
 
 [lockscreen_widgets]
 enabled = false
@@ -205,15 +219,18 @@ polkit_agent = true
 
 [theme]
 builtin = "Catppuccin"
-community_palette = "Catppuccin Mocha Lavender"
+community_palette = "Catppuccin Mocha Green"
 custom_palette = "Catppuccin Mocha Green"
 source = "community"
 wallpaper_scheme = "faithful"
 
     [theme.templates]
+    builtin_ids = [ "btop", "cava", "foot", "gtk3", "gtk4", "hyprland", "kitty", "mango", "niri", "qt" ]
     community_ids = [
         "pywalfox",
         "discord",
+        "blender",
+        "gimp",
         "neovim",
         "vscode",
         "heroiclauncher",
@@ -226,13 +243,13 @@ wallpaper_scheme = "faithful"
     ]
 
 [wallpaper.default]
-path = "/home/ckjos/Pictures/Wallpapers/sel-walls_1/abstract-swirls.png"
+path = "/home/ckjos/Pictures/Wallpapers/sel-walls_1/car-wreck.png"
 
 [wallpaper.last]
-path = "/home/ckjos/Pictures/Wallpapers/sel-walls_1/abstract-swirls.png"
+path = "/home/ckjos/Pictures/Wallpapers/sel-walls_1/car-wreck.png"
 
 [wallpaper.monitors.HDMI-A-1]
-path = "/home/ckjos/Pictures/Wallpapers/sel-walls_1/abstract-swirls.png"
+path = "/home/ckjos/Pictures/Wallpapers/sel-walls_1/car-wreck.png"
 
 [widget.cat]
 type = "dotnetrob/cat:cat"
@@ -244,6 +261,9 @@ type = "dotnetrob/cat:cat"
 type = "dotnetrob/cat:cat"
 
 [widget.cat_4]
+type = "dotnetrob/cat:cat"
+
+[widget.cat_5]
 type = "dotnetrob/cat:cat"
 
 [widget.clock]
@@ -263,6 +283,9 @@ type = "avivbintangaringga/nix-monitor:nix-monitor"
 type = "avivbintangaringga/nix-monitor:nix-monitor"
 
 [widget.nix_monitor_4]
+type = "avivbintangaringga/nix-monitor:nix-monitor"
+
+[widget.nix_monitor_5]
 type = "avivbintangaringga/nix-monitor:nix-monitor"
 
 [widget.workspaces]
