@@ -218,10 +218,10 @@ polkit_agent = true
     grid = true
 
 [theme]
-builtin = "Catppuccin"
-community_palette = "Catppuccin Mocha Green"
+builtin = "Tokyo-Night"
+community_palette = "Catppuccin Mocha Rosewater"
 custom_palette = "Catppuccin Mocha Green"
-source = "community"
+source = "builtin"
 wallpaper_scheme = "faithful"
 
     [theme.templates]
@@ -243,13 +243,13 @@ wallpaper_scheme = "faithful"
     ]
 
 [wallpaper.default]
-path = "/home/ckjos/Pictures/Wallpapers/sel-walls_1/car-wreck.png"
+path = "/home/ckjos/Pictures/Wallpapers/sel-walls_1/abstract-swirls.png"
 
 [wallpaper.last]
-path = "/home/ckjos/Pictures/Wallpapers/sel-walls_1/car-wreck.png"
+path = "/home/ckjos/Pictures/Wallpapers/sel-walls_1/abstract-swirls.png"
 
 [wallpaper.monitors.HDMI-A-1]
-path = "/home/ckjos/Pictures/Wallpapers/sel-walls_1/car-wreck.png"
+path = "/home/ckjos/Pictures/Wallpapers/sel-walls_1/abstract-swirls.png"
 
 [widget.cat]
 type = "dotnetrob/cat:cat"
