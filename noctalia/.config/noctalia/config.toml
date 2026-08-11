@@ -219,10 +219,10 @@ polkit_agent = true
     grid = true
 
 [theme]
-builtin = "Tokyo-Night"
+builtin = "Gruvbox"
 community_palette = "Catppuccin Mocha Rosewater"
 custom_palette = "Catppuccin Mocha Green"
-source = "builtin"
+source = "community"
 wallpaper_scheme = "faithful"
 
     [theme.templates]
@@ -244,13 +244,13 @@ wallpaper_scheme = "faithful"
     ]
 
 [wallpaper.default]
-path = "/home/ckjos/Pictures/Wallpapers/sel-walls_1/abstract-swirls.png"
+path = "/home/ckjos/Pictures/Wallpapers/wallhaven/wallhaven-3kml9y_2560x1440.png"
 
 [wallpaper.last]
-path = "/home/ckjos/Pictures/Wallpapers/sel-walls_1/abstract-swirls.png"
+path = "/home/ckjos/Pictures/Wallpapers/wallhaven/wallhaven-3kml9y_2560x1440.png"
 
 [wallpaper.monitors.HDMI-A-1]
-path = "/home/ckjos/Pictures/Wallpapers/sel-walls_1/abstract-swirls.png"
+path = "/home/ckjos/Pictures/Wallpapers/wallhaven/wallhaven-3kml9y_2560x1440.png"
 
 [widget.cat]
 type = "dotnetrob/cat:cat"
