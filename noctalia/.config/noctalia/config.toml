@@ -217,7 +217,7 @@ polkit_agent = true
 
 [theme]
 builtin = "Tokyo-Night"
-community_palette = "Catppuccin Mocha Lavender"
+community_palette = "Catppuccin Mocha Blue"
 custom_palette = "Catppuccin Mocha Green"
 mode = "dark"
 source = "community"
@@ -225,6 +225,23 @@ wallpaper_scheme = "faithful"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "foot", "gtk3", "gtk4", "hyprland", "kitty", "mango", "niri", "qt" ]
+    community_ids = [
+        "pywalfox",
+        "discord",
+        "blender",
+        "gimp",
+        "inkscape",
+        "neovim",
+        "heroiclauncher",
+        "prismlauncher",
+        "steam",
+        "obs",
+        "hyprtoolkit",
+        "papirus-icons",
+        "bat",
+        "lazygit",
+        "yazi"
+    ]
 
 [wallpaper.default]
 path = "/home/ckjos/Pictures/Wallpapers/wallhaven/wallhaven-e86ewr.png"
