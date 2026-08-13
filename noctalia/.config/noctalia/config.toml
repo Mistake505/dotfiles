@@ -70,7 +70,7 @@ pinned = [
     "kitty",
     "librewolf",
     "org.gnome.Nautilus",
-    "equibop",
+    "vesktop",
     "org.vinegarhq.Sober",
     "org.prismlauncher.PrismLauncher",
     "steam"
@@ -191,20 +191,17 @@ font_family = "Maple Mono NF"
 niri_overview_type_to_launch_enabled = true
 polkit_agent = true
 
-    [shell.launcher]
-    categories = false
+    [shell.launcher.providers.emoji]
+    global = false
 
-        [shell.launcher.providers.emoji]
-        global = false
+    [shell.launcher.providers.session]
+    global = true
 
-        [shell.launcher.providers.session]
-        global = true
+    [shell.launcher.providers.wallpaper]
+    global = false
 
-        [shell.launcher.providers.wallpaper]
-        global = false
-
-        [shell.launcher.providers.windows]
-        global = true
+    [shell.launcher.providers.windows]
+    global = true
 
     [shell.panel]
     control_center_placement = "floating"
@@ -219,38 +216,24 @@ polkit_agent = true
     grid = true
 
 [theme]
-builtin = "Gruvbox"
-community_palette = "Catppuccin Mocha Rosewater"
+builtin = "Tokyo-Night"
+community_palette = "Catppuccin Mocha Lavender"
 custom_palette = "Catppuccin Mocha Green"
+mode = "dark"
 source = "community"
 wallpaper_scheme = "faithful"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "foot", "gtk3", "gtk4", "hyprland", "kitty", "mango", "niri", "qt" ]
-    community_ids = [
-        "pywalfox",
-        "discord",
-        "blender",
-        "gimp",
-        "neovim",
-        "vscode",
-        "heroiclauncher",
-        "prismlauncher",
-        "steam",
-        "papirus-icons",
-        "bat",
-        "lazygit",
-        "yazi"
-    ]
 
 [wallpaper.default]
-path = "/home/ckjos/Pictures/Wallpapers/wallhaven/wallhaven-3kml9y_2560x1440.png"
+path = "/home/ckjos/Pictures/Wallpapers/wallhaven/wallhaven-e86ewr.png"
 
 [wallpaper.last]
-path = "/home/ckjos/Pictures/Wallpapers/wallhaven/wallhaven-3kml9y_2560x1440.png"
+path = "/home/ckjos/Pictures/Wallpapers/wallhaven/wallhaven-e86ewr.png"
 
 [wallpaper.monitors.HDMI-A-1]
-path = "/home/ckjos/Pictures/Wallpapers/wallhaven/wallhaven-3kml9y_2560x1440.png"
+path = "/home/ckjos/Pictures/Wallpapers/wallhaven/wallhaven-e86ewr.png"
 
 [widget.cat]
 type = "dotnetrob/cat:cat"

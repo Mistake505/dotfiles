@@ -20,7 +20,7 @@ binds {
 
     Mod+B { spawn "librewolf"; }
     Mod+Shift+B { spawn "tor-browser"; }    
-
+    
 
 
     // Audio & Brightness
