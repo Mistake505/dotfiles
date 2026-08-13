@@ -220,7 +220,7 @@ polkit_agent = true
 
 [theme]
 builtin = "Tokyo-Night"
-community_palette = "Catppuccin Mocha Blue"
+community_palette = "Catppuccin Mocha Sapphire"
 custom_palette = "Catppuccin Mocha Green"
 mode = "dark"
 source = "community"
@@ -293,4 +293,4 @@ type = "avivbintangaringga/nix-monitor:nix-monitor"
 type = "avivbintangaringga/nix-monitor:nix-monitor"
 
 [widget.workspaces]
-display = "none"
+show_labels = false
