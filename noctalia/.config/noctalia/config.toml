@@ -191,17 +191,20 @@ font_family = "Maple Mono NF"
 niri_overview_type_to_launch_enabled = true
 polkit_agent = true
 
-    [shell.launcher.providers.emoji]
-    global = false
+    [shell.launcher]
+    categories = false
 
-    [shell.launcher.providers.session]
-    global = true
+        [shell.launcher.providers.emoji]
+        global = false
 
-    [shell.launcher.providers.wallpaper]
-    global = false
+        [shell.launcher.providers.session]
+        global = true
 
-    [shell.launcher.providers.windows]
-    global = true
+        [shell.launcher.providers.wallpaper]
+        global = false
+
+        [shell.launcher.providers.windows]
+        global = true
 
     [shell.panel]
     control_center_placement = "floating"
