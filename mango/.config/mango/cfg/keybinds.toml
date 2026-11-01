@@ -4,7 +4,7 @@
 [bind.default]
 # Your favorite applications.
 "SUPER+Return" = "spawn, kitty"
-"SUPER+e"      = "spawn, dolphin"
+"SUPER+e"      = "spawn, kitty --class yazi yazi"
 "SUPER+b"      = "spawn, librewolf"
 
 # Please choose the text editor of your choice.
