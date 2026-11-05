@@ -1,3 +1,2 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR fish_function_path:\x7e/\x2econfig/fish/functions
