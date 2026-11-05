@@ -1,3 +1,3 @@
 function rebuild-build-test
-    sudo nixos-rebuild build --flake ~/nix-config#(hostname)
+    sudo nixos-rebuild build --flake ~/nix-config#(hostname) $argv
 end
