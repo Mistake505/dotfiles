@@ -1,3 +1,4 @@
 function rebuild-upgrade
-    sudo nixos-rebuild switch --flake ~/nix-config#$(hostname) --upgrade
+    nix flake update ~/.nix-config
+    and sudo nixos-rebuild switch --flake ~/nix-config#$(hostname) --upgrade
 end
