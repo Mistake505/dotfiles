@@ -7,3 +7,8 @@ output "HDMI-A-1" {
     mode "2560x1440@59.951" // Set resolution and refresh rate
     scale 1.25 // No scaling (use 2 for HiDPI)
 }
+
+output "eDP-1" {
+    mode "1920x1080@60.020" // Set resolution and refresh rate
+    scale 1.2 // No scaling (use 2 for HiDPI)
+}
