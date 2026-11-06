@@ -10,6 +10,7 @@ capsule_border = "outline_variant"
 capsule_opacity = 0.79999998211860657
 capsule_radius = 0
 center = [ "cat_2", "clock", "date", "eyecare-widget", "bar" ]
+enabled = false
 end = [
     "media",
     "tray",
@@ -224,8 +225,21 @@ polkit_agent = true
 popup_shadows = false
 
     [shell.launcher]
+    show_app_actions = true
     sort_by_usage = false
     width = 720
+
+        [shell.launcher.providers.panels]
+        global = true
+
+        [shell.launcher.providers.session]
+        global = true
+
+        [shell.launcher.providers.wallpaper]
+        global = false
+
+        [shell.launcher.providers.windows]
+        global = true
 
     [shell.panel]
     border_color = "primary"
@@ -250,7 +264,7 @@ popup_shadows = false
     grid = true
 
 [theme]
-builtin = "Catppuccin"
+builtin = "Rosé Pine"
 community_palette = "Rose Pine Moon"
 mode = "dark"
 source = "builtin"
@@ -258,15 +272,32 @@ wallpaper_scheme = "faithful"
 
     [theme.templates]
     builtin_ids = [ "alacritty", "btop", "cava", "gtk3", "gtk4", "hyprland", "kcolorscheme", "kitty", "mango", "niri" ]
+    community_ids = [
+        "pywalfox",
+        "discord",
+        "blender",
+        "gimp",
+        "inkscape",
+        "zed",
+        "heroiclauncher",
+        "prismlauncher",
+        "steam",
+        "obs",
+        "papirus-icons",
+        "bat",
+        "fzf",
+        "lazygit",
+        "yazi"
+    ]
 
 [wallpaper.default]
-path = "/home/ckjos/Pictures/Wallpapers/wallhaven/Themed/wallhaven-jevz8y.png"
+path = "/home/ckjos/Pictures/Wallpapers/wallhaven/Themed/wallhaven-xepp7d.jpg"
 
 [wallpaper.last]
-path = "/home/ckjos/Pictures/Wallpapers/wallhaven/Themed/wallhaven-jevz8y.png"
+path = "/home/ckjos/Pictures/Wallpapers/wallhaven/Themed/wallhaven-xepp7d.jpg"
 
 [wallpaper.monitors.HDMI-A-1]
-path = "/home/ckjos/Pictures/Wallpapers/wallhaven/Themed/wallhaven-jevz8y.png"
+path = "/home/ckjos/Pictures/Wallpapers/wallhaven/Themed/wallhaven-xepp7d.jpg"
 
 [widget.bar]
 show_idle_on_horizontal = false
