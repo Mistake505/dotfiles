@@ -10,7 +10,6 @@ capsule_border = "outline_variant"
 capsule_opacity = 0.79999998211860657
 capsule_radius = 0
 center = [ "cat_2", "clock", "date", "eyecare-widget", "bar" ]
-enabled = false
 end = [
     "media",
     "tray",
@@ -27,6 +26,7 @@ margin_edge = 0
 margin_ends = 0
 radius = 0
 shadow = false
+start = [ "launcher", "wallpaper", "workspaces", "btn" ]
 
 [bar.default_sysmon]
 background_opacity = 0.79999998211860657
@@ -99,7 +99,6 @@ capsule_border = "outline_variant"
 capsule_opacity = 0.79999998211860657
 capsule_radius = 0
 center = [ "cat_5", "clock", "date", "eyecare_widget_4", "bar_4" ]
-enabled = true
 end = [
     "media",
     "tray",
@@ -124,6 +123,7 @@ border = "primary"
 border_width = 1.0
 capsule = true
 capsule_border = "outline_variant"
+capsule_opacity = 0.79999998211860657
 capsule_radius = 0
 center = [ "cat", "cpu", "ram", "temp", "network_rx", "network_tx" ]
 end = []
@@ -144,13 +144,13 @@ sidebar_section = "none"
 background_opacity = 0.79999998211860657
 border = "primary"
 border_width = 1.0
-enabled = false
 launcher_custom_image = "/home/ckjos/nixos-artwork/logo/nix-snowflake-white.svg"
 launcher_custom_image_colorize = true
 launcher_position = "start"
 radius = 0
 reserve_space = false
 shadow = false
+show_dots = true
 smart_auto_hide = true
 
 [lockscreen_widgets]
@@ -204,6 +204,11 @@ border_width = 1.0
 [plugin_settings."dotnetrob/cat"]
 panel_placement = "floating"
 
+[plugin_settings."ezequiel/mango_layouts"]
+list_mode = true
+panel_open_near_click = true
+panel_position = "auto"
+
 [plugin_settings."noctalia/timer"]
 panel_placement = "floating"
 
@@ -213,7 +218,9 @@ enabled = [ "dotnetrob/cat", "ezequiel/mango_layouts", "apex077/eyecare", "nocta
 [shell]
 corner_radius_scale = 0.0
 font_family = "Maple Mono NF"
+niri_overview_close_on_launch_enabled = true
 niri_overview_type_to_launch_enabled = true
+polkit_agent = true
 popup_shadows = false
 
     [shell.launcher]
@@ -226,6 +233,7 @@ popup_shadows = false
     control_center_placement = "floating"
     open_near_click_control_center = true
     open_near_click_launcher = true
+    open_near_click_session = true
     session_placement = "floating"
     shadow = false
     transparency_mode = "soft"
@@ -238,37 +246,27 @@ popup_shadows = false
     remember_last_region = true
     skip_annotate_on_copy_save = true
 
+    [shell.session]
+    grid = true
+
 [theme]
-builtin = "Rosé Pine"
+builtin = "Catppuccin"
+community_palette = "Rose Pine Moon"
 mode = "dark"
 source = "builtin"
+wallpaper_scheme = "faithful"
 
     [theme.templates]
-    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "hyprland", "kcolorscheme", "kitty", "mango", "niri" ]
-    community_ids = [
-        "pywalfox",
-        "discord",
-        "gimp",
-        "inkscape",
-        "zed",
-        "prismlauncher",
-        "steam",
-        "thunderbird",
-        "papirus-icons",
-        "bat",
-        "fzf",
-        "lazygit",
-        "yazi"
-    ]
+    builtin_ids = [ "alacritty", "btop", "cava", "gtk3", "gtk4", "hyprland", "kcolorscheme", "kitty", "mango", "niri" ]
 
 [wallpaper.default]
-path = "/home/ckjos/Pictures/Wallpapers/wallhaven/Themed/wallhaven-xepp7d.jpg"
+path = "/home/ckjos/Pictures/Wallpapers/wallhaven/Themed/wallhaven-jevz8y.png"
 
 [wallpaper.last]
-path = "/home/ckjos/Pictures/Wallpapers/wallhaven/Themed/wallhaven-xepp7d.jpg"
+path = "/home/ckjos/Pictures/Wallpapers/wallhaven/Themed/wallhaven-jevz8y.png"
 
 [wallpaper.monitors.HDMI-A-1]
-path = "/home/ckjos/Pictures/Wallpapers/wallhaven/Themed/wallhaven-xepp7d.jpg"
+path = "/home/ckjos/Pictures/Wallpapers/wallhaven/Themed/wallhaven-jevz8y.png"
 
 [widget.bar]
 show_idle_on_horizontal = false
@@ -286,6 +284,10 @@ type = "noctalia/timer:bar"
 show_idle_on_horizontal = false
 type = "noctalia/timer:bar"
 
+[widget.btn]
+show_text = true
+type = "ezequiel/mango_layouts:btn"
+
 [widget.cat]
 type = "dotnetrob/cat:cat"
 
@@ -302,6 +304,9 @@ type = "dotnetrob/cat:cat"
 [widget.cat_5]
 show_cpu_percent = true
 type = "dotnetrob/cat:cat"
+
+[widget.clock]
+format = "{:%I:%M %p}"
 
 [widget.cpu]
 visualization = "none"
