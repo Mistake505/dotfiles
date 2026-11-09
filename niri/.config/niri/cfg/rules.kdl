@@ -59,5 +59,12 @@ layer-rule {
   background-effect {
     xray false
   }
+}
 
+layer-rule {
+  match namespace="noctalia-bar-caelaeass"
+
+  background-effect {
+    xray false
+  }
 }
