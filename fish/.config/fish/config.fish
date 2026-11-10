@@ -8,6 +8,11 @@ end
 
 set fish_function_path ~/.config/fish/functions
 
+if set -q ZELLIJ
+else
+    zellij
+end
+
 function y
     set tmp (mktemp -t "yazi-cwd.XXXXXX")
     command yazi $argv --cwd-file="$tmp"

@@ -1,144 +1,359 @@
 [backdrop]
 enabled = true
 
-[bar.default]
-background_opacity = 0.79999998211860657
-border = "primary"
-border_width = 1.0
-capsule = true
-capsule_border = "outline_variant"
-capsule_opacity = 0.79999998211860657
-capsule_radius = 0
-center = [ "cat_2", "clock", "date", "eyecare-widget", "bar" ]
-enabled = false
-end = [
-    "media",
-    "tray",
-    "notifications",
-    "clipboard",
-    "network",
-    "bluetooth",
-    "volume",
-    "brightness",
-    "battery",
-    "session"
-]
-margin_edge = 0
-margin_ends = 0
-radius = 0
-shadow = false
-start = [ "launcher", "wallpaper", "workspaces", "btn" ]
+[bar]
+order = [ "default", "default_sysmon", "default_sysmon_taskbar", "default_taskbar", "sysmon_stats", "caelaeass" ]
 
-[bar.default_sysmon]
-background_opacity = 0.79999998211860657
-border = "primary"
-border_width = 1.0
-capsule = true
-capsule_border = "outline_variant"
-capsule_opacity = 0.79999998211860657
-capsule_radius = 0
-center = [ "cat_3", "cpu", "ram", "temp", "network_rx", "network_tx" ]
-enabled = false
-end = [
-    "clock",
-    "date",
-    "eyecare_widget_2",
-    "bar_2",
-    "tray",
-    "notifications",
-    "clipboard",
-    "network",
-    "bluetooth",
-    "volume",
-    "brightness",
-    "battery",
-    "session"
-]
-margin_edge = 0
-margin_ends = 0
-radius = 0
-shadow = false
-start = [ "launcher", "wallpaper", "workspaces", "media" ]
+    [bar.caelaeass]
+    background_opacity = 0.79999998211860657
+    border = "primary"
+    border_width = 1.0
+    capsule = true
+    capsule_border = "outline_variant"
+    capsule_opacity = 0.79999998211860657
+    capsule_radius = 0
+    center = [ "active_window", "group:g3" ]
+    enabled = false
+    end = [ "group:g5", "group:g2", "group:g4" ]
+    margin_ends = 0
+    position = "left"
+    radius = 0
+    reserve_space = false
+    scale = 1.2500000111758709
+    shadow = false
+    smart_auto_hide = true
+    start = [ "launcher", "group:g1" ]
+    thickness = 60
 
-[bar.default_sysmon_taskbar]
-background_opacity = 0.79999998211860657
-border = "primary"
-border_width = 1.0
-capsule = true
-capsule_border = "outline_variant"
-capsule_opacity = 0.79999998211860657
-capsule_radius = 0
-center = [ "cat_4", "cpu", "ram", "temp", "network_rx", "network_tx" ]
-enabled = false
-end = [
-    "clock",
-    "date",
-    "eyecare_widget_3",
-    "bar_3",
-    "tray",
-    "notifications",
-    "clipboard",
-    "network",
-    "bluetooth",
-    "volume",
-    "brightness",
-    "battery",
-    "session"
-]
-margin_edge = 0
-margin_ends = 0
-radius = 0
-shadow = false
-start = [ "launcher", "wallpaper", "taskbar", "media" ]
+        [[bar.caelaeass.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border = "outline_variant"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g1"
+        members = [ "taskbar" ]
+        opacity = 0.79999995231628418
+        padding = 6.0
+        radius = 0.0
 
-[bar.default_taskbar]
-background_opacity = 0.79999998211860657
-border = "primary"
-border_width = 1.0
-capsule = true
-capsule_border = "outline_variant"
-capsule_opacity = 0.79999998211860657
-capsule_radius = 0
-center = [ "cat_5", "clock", "date", "eyecare_widget_4", "bar_4" ]
-end = [
-    "media",
-    "tray",
-    "notifications",
-    "clipboard",
-    "network",
-    "bluetooth",
-    "volume",
-    "brightness",
-    "battery",
-    "session"
-]
-margin_edge = 0
-margin_ends = 0
-radius = 0
-shadow = false
-start = [ "launcher", "wallpaper", "taskbar" ]
+        [[bar.caelaeass.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border = "outline_variant"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g2"
+        members = [ "clipboard", "network", "bluetooth", "volume", "brightness", "battery", "control-center" ]
+        opacity = 0.79999995231628418
+        padding = 6.0
+        radius = 0.0
 
-[bar.sysmon_stats]
-background_opacity = 0.79999998211860657
-border = "primary"
-border_width = 1.0
-capsule = true
-capsule_border = "outline_variant"
-capsule_opacity = 0.79999998211860657
-capsule_radius = 0
-center = [ "cat", "cpu", "ram", "temp", "network_rx", "network_tx" ]
-end = []
-margin_ends = 349
-position = "right"
-radius = 0
-reserve_space = false
-scale = 1.2500000111758709
-shadow = false
-smart_auto_hide = true
-start = []
-thickness = 120
+        [[bar.caelaeass.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border = "tertiary"
+        border_width = 1.0
+        enabled = true
+        fill = "tertiary_container"
+        foreground = "on_tertiary_container"
+        id = "g3"
+        members = [ "cat_6" ]
+        opacity = 0.79999995231628418
+        padding = 6.0
+        radius = 0.0
+
+        [[bar.caelaeass.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border = "error"
+        border_width = 1.0
+        enabled = true
+        fill = "error_container"
+        foreground = "on_error_container"
+        id = "g4"
+        members = [ "session" ]
+        opacity = 0.79999995231628418
+        padding = 6.0
+        radius = 0.0
+
+        [[bar.caelaeass.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border = "outline_variant"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g5"
+        members = [ "media", "tray", "notifications", "clock" ]
+        opacity = 0.79999995231628418
+        padding = 6.0
+        radius = 0.0
+
+    [bar.default]
+    background_opacity = 0.79999998211860657
+    border = "primary"
+    border_width = 1.0
+    capsule = true
+    capsule_border = "outline_variant"
+    capsule_opacity = 0.79999998211860657
+    capsule_radius = 0
+    center = [ "cat_8", "group:g2", "eyecare-widget", "bar" ]
+    enabled = false
+    end = [ "media", "tray", "notifications", "group:g1", "session" ]
+    margin_edge = 0
+    margin_ends = 0
+    radius = 0
+    shadow = false
+    start = [ "launcher", "wallpaper", "workspaces", "btn" ]
+
+        [[bar.default.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border = "outline_variant"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g1"
+        members = [ "clipboard", "network", "bluetooth", "volume", "brightness", "battery" ]
+        opacity = 0.79999995231628418
+        padding = 6.0
+        radius = 0.0
+
+        [[bar.default.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border = "outline_variant"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g2"
+        members = [ "clock", "date" ]
+        opacity = 0.79999995231628418
+        padding = 6.0
+        radius = 0.0
+        widget_spacing = 8
+
+    [bar.default_sysmon]
+    background_opacity = 0.79999998211860657
+    border = "primary"
+    border_width = 1.0
+    capsule = true
+    capsule_border = "outline_variant"
+    capsule_opacity = 0.79999998211860657
+    capsule_radius = 0
+    center = [ "cat_7", "cpu", "sysmon", "ram", "temp", "group:g4" ]
+    enabled = false
+    end = [ "group:g3", "eyecare_widget_2", "bar_2", "tray", "notifications", "group:g1", "session" ]
+    margin_edge = 0
+    margin_ends = 0
+    radius = 0
+    shadow = false
+    start = [ "launcher", "wallpaper", "workspaces", "media" ]
+
+        [[bar.default_sysmon.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border = "outline_variant"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g1"
+        members = [ "clipboard", "network", "bluetooth", "volume", "brightness", "battery" ]
+        opacity = 0.79999995231628418
+        padding = 6.0
+        radius = 0.0
+
+        [[bar.default_sysmon.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border = "outline_variant"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g2"
+        members = [ "network_rx", "network_tx" ]
+        opacity = 0.79999995231628418
+        padding = 6.0
+        radius = 0.0
+
+        [[bar.default_sysmon.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border = "outline_variant"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g3"
+        members = [ "clock", "date" ]
+        opacity = 0.79999995231628418
+        padding = 6.0
+        radius = 0.0
+        widget_spacing = 6
+
+        [[bar.default_sysmon.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border = "outline_variant"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g4"
+        members = [ "network_rx", "network_tx" ]
+        opacity = 0.79999995231628418
+        padding = 6.0
+        radius = 0.0
+
+    [bar.default_sysmon_taskbar]
+    background_opacity = 0.79999998211860657
+    border = "primary"
+    border_width = 1.0
+    capsule = true
+    capsule_border = "outline_variant"
+    capsule_opacity = 0.79999998211860657
+    capsule_radius = 0
+    center = [ "cat_9", "cpu", "sysmon", "ram", "temp", "group:g4" ]
+    enabled = false
+    end = [ "group:g3", "eyecare_widget_3", "bar_3", "tray", "notifications", "group:g1", "session" ]
+    margin_edge = 0
+    margin_ends = 0
+    radius = 0
+    shadow = false
+    start = [ "launcher", "wallpaper", "taskbar", "media" ]
+
+        [[bar.default_sysmon_taskbar.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border = "outline_variant"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g1"
+        members = [ "clipboard", "network", "bluetooth", "volume", "brightness", "battery" ]
+        opacity = 0.79999995231628418
+        padding = 6.0
+        radius = 0.0
+
+        [[bar.default_sysmon_taskbar.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border = "outline_variant"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g2"
+        members = [ "network_rx", "network_tx" ]
+        opacity = 0.79999995231628418
+        padding = 6.0
+        radius = 0.0
+
+        [[bar.default_sysmon_taskbar.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border = "outline_variant"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g3"
+        members = [ "clock", "date" ]
+        opacity = 0.79999995231628418
+        padding = 6.0
+        radius = 0.0
+        widget_spacing = 8
+
+        [[bar.default_sysmon_taskbar.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border = "outline_variant"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g4"
+        members = [ "network_rx", "network_tx" ]
+        opacity = 0.79999995231628418
+        padding = 6.0
+        radius = 0.0
+
+    [bar.default_taskbar]
+    background_opacity = 0.79999998211860657
+    border = "primary"
+    border_width = 1.0
+    capsule = true
+    capsule_border = "outline_variant"
+    capsule_opacity = 0.79999998211860657
+    capsule_radius = 0
+    center = [ "cat_5", "group:g2", "eyecare_widget_4", "bar_4" ]
+    end = [ "media", "tray", "notifications", "group:g1", "session" ]
+    margin_edge = 0
+    margin_ends = 0
+    radius = 0
+    shadow = false
+    start = [ "launcher", "wallpaper", "taskbar" ]
+
+        [[bar.default_taskbar.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border = "outline_variant"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g1"
+        members = [ "clipboard", "network", "bluetooth", "volume", "brightness", "battery" ]
+        opacity = 0.79999995231628418
+        padding = 6.0
+        radius = 0.0
+
+        [[bar.default_taskbar.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border = "outline_variant"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g2"
+        members = [ "clock", "date" ]
+        opacity = 0.79999995231628418
+        padding = 6.0
+        radius = 0.0
+        widget_spacing = 8
+
+    [bar.sysmon_stats]
+    background_opacity = 0.79999998211860657
+    border = "primary"
+    border_width = 1.0
+    capsule = true
+    capsule_border = "outline_variant"
+    capsule_opacity = 0.79999998211860657
+    capsule_radius = 0
+    center = [ "cpu", "sysmon", "ram", "temp", "group:g1" ]
+    end = []
+    margin_ends = 352
+    position = "right"
+    radius = 0
+    reserve_space = false
+    scale = 1.2500000111758709
+    shadow = false
+    smart_auto_hide = true
+    start = []
+    thickness = 120
+
+        [[bar.sysmon_stats.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border = "outline_variant"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g1"
+        members = [ "network_rx", "network_tx" ]
+        opacity = 0.79999995231628418
+        padding = 6.0
+        radius = 0.0
 
 [control_center]
+sidebar = "full"
 sidebar_section = "none"
 
 [dock]
@@ -213,8 +428,12 @@ panel_position = "auto"
 [plugin_settings."noctalia/timer"]
 panel_placement = "floating"
 
+[plugin_settings."noctalia/wallhaven"]
+browser_placement = "floating"
+download_dir = "/home/ckjos/Pictures/Wallpapers/wallhaven/Abstract"
+
 [plugins]
-enabled = [ "dotnetrob/cat", "ezequiel/mango_layouts", "apex077/eyecare", "noctalia/timer" ]
+enabled = [ "dotnetrob/cat", "ezequiel/mango_layouts", "apex077/eyecare", "noctalia/timer", "noctalia/wallhaven" ]
 
 [shell]
 corner_radius_scale = 0.0
@@ -245,7 +464,6 @@ popup_shadows = false
     border_color = "primary"
     border_width = 1.0
     control_center_placement = "floating"
-    open_near_click_control_center = true
     open_near_click_launcher = true
     open_near_click_session = true
     session_placement = "floating"
@@ -257,17 +475,14 @@ popup_shadows = false
     annotate = true
     confirm_region = true
     copy_on_close = true
+    directory = "/home/ckjos/Pictures/Screenshots"
     remember_last_region = true
     skip_annotate_on_copy_save = true
 
-    [shell.session]
-    grid = true
-
 [theme]
-builtin = "Rosé Pine"
-community_palette = "Rose Pine Moon"
+builtin = "Catppuccin"
+community_palette = "Tokyo Night Storm"
 mode = "dark"
-source = "builtin"
 wallpaper_scheme = "faithful"
 
     [theme.templates]
@@ -278,26 +493,33 @@ wallpaper_scheme = "faithful"
         "blender",
         "gimp",
         "inkscape",
+        "lazyvim",
         "zed",
         "heroiclauncher",
         "prismlauncher",
         "steam",
         "obs",
+        "thunderbird",
+        "zellij",
         "papirus-icons",
         "bat",
         "fzf",
         "lazygit",
+        "tmux",
         "yazi"
     ]
 
 [wallpaper.default]
-path = "/home/ckjos/Pictures/Wallpapers/wallhaven/Themed/wallhaven-xepp7d.jpg"
+path = "/home/ckjos/Pictures/Wallpapers/wallhaven/Themed/pine-tree_rose-pine.png"
 
 [wallpaper.last]
-path = "/home/ckjos/Pictures/Wallpapers/wallhaven/Themed/wallhaven-xepp7d.jpg"
+path = "/home/ckjos/Pictures/Wallpapers/wallhaven/Themed/pine-tree_rose-pine.png"
 
 [wallpaper.monitors.HDMI-A-1]
-path = "/home/ckjos/Pictures/Wallpapers/wallhaven/Themed/wallhaven-xepp7d.jpg"
+path = "/home/ckjos/Pictures/Wallpapers/wallhaven/Themed/pine-tree_rose-pine.png"
+
+[widget.active_window]
+display = "icon_only"
 
 [widget.bar]
 show_idle_on_horizontal = false
@@ -320,20 +542,42 @@ show_text = true
 type = "ezequiel/mango_layouts:btn"
 
 [widget.cat]
-type = "dotnetrob/cat:cat"
-
-[widget.cat_2]
-show_cpu_percent = true
+cat_color = "on_primary_container"
 type = "dotnetrob/cat:cat"
 
 [widget.cat_3]
+capsule_border = "primary"
+capsule_fill = "primary_container"
+cat_color = "on_primary_container"
+cat_color_mode = "custom"
 type = "dotnetrob/cat:cat"
 
 [widget.cat_4]
+capsule_border = "primary"
+capsule_fill = "primary_container"
+cat_color = "on_primary_container"
+cat_color_mode = "custom"
 type = "dotnetrob/cat:cat"
 
 [widget.cat_5]
+cat_color = "on_tertiary_container"
 show_cpu_percent = true
+type = "dotnetrob/cat:cat"
+
+[widget.cat_6]
+cat_color = "on_tertiary_container"
+cat_color_mode = "custom"
+show_cpu_percent = true
+type = "dotnetrob/cat:cat"
+
+[widget.cat_7]
+type = "dotnetrob/cat:cat"
+
+[widget.cat_8]
+show_cpu_percent = true
+type = "dotnetrob/cat:cat"
+
+[widget.cat_9]
 type = "dotnetrob/cat:cat"
 
 [widget.clock]
@@ -341,6 +585,10 @@ format = "{:%I:%M %p}"
 
 [widget.cpu]
 visualization = "none"
+
+[widget.date]
+font_scale = 1.02
+scale = 1.05
 
 [widget.eyecare-widget]
 type = "apex077/eyecare:eyecare-widget"
@@ -356,6 +604,7 @@ type = "apex077/eyecare:eyecare-widget"
 
 [widget.launcher]
 custom_image = "/home/ckjos/nixos-artwork/logo/nix-snowflake-white.svg"
+custom_image_colorize = true
 
 [widget.media]
 hide_when_no_media = true
@@ -368,6 +617,19 @@ visualization = "none"
 visualization = "none"
 
 [widget.ram]
+font_scale = 0.98999999999999999
+visualization = "none"
+
+[widget.session]
+capsule_border = "error"
+capsule_fill = "error_container"
+color = "on_error_container"
+scale = 0.90000000000000013
+
+[widget.sysmon]
+custom_image = "/home/ckjos/Downloads/nvidia-svgrepo-com.svg"
+custom_image_colorize = true
+stat = "gpu_vram_used"
 visualization = "none"
 
 [widget.taskbar]
@@ -380,7 +642,7 @@ visualization = "none"
 
 [widget.tray]
 detached_panel = true
-drawer = true
+drawer = false
 hide_passive = false
 
 [widget.workspaces]
