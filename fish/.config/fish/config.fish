@@ -8,8 +8,7 @@ end
 
 set fish_function_path ~/.config/fish/functions
 
-if set -q ZELLIJ
-else
+if status is-interactive; and not set -q ZELLIJ
     zellij
 end
 

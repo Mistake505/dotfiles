@@ -480,7 +480,7 @@ popup_shadows = false
     skip_annotate_on_copy_save = true
 
 [theme]
-builtin = "Catppuccin"
+builtin = "Rosé Pine"
 community_palette = "Tokyo Night Storm"
 mode = "dark"
 wallpaper_scheme = "faithful"
@@ -629,7 +629,6 @@ scale = 0.90000000000000013
 [widget.sysmon]
 custom_image = "/home/ckjos/Downloads/nvidia-svgrepo-com.svg"
 custom_image_colorize = true
-stat = "gpu_vram_used"
 visualization = "none"
 
 [widget.taskbar]
