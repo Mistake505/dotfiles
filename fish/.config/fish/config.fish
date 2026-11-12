@@ -8,9 +8,9 @@ end
 
 set fish_function_path ~/.config/fish/functions
 
-if status is-interactive; and not set -q ZELLIJ
-    zellij
-end
+# if status is-interactive; and not set -q ZELLIJ
+#     zellij
+# end
 
 function y
     set tmp (mktemp -t "yazi-cwd.XXXXXX")

@@ -495,13 +495,13 @@ theme "noctalia"
 // (Requires restart)
 // Default: true (if the host terminal supports it)
 // 
-// support_kitty_keyboard_protocol false
+support_kitty_keyboard_protocol true
  
 // Enable or disable support for the Kitty Graphics Protocol, used to display images (the host terminal must also support it)
 // (Requires restart)
 // Default: true (if the host terminal supports it)
 // 
-// support_kitty_graphics_protocol false
+support_kitty_graphics_protocol true
 // Whether to make sure a local web server is running when a new Zellij session starts.
 // This web server will allow creating new sessions and attaching to existing ones that have
 // opted in to being shared in the browser.
