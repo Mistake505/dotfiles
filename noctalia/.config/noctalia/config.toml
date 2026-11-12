@@ -327,9 +327,9 @@ order = [ "default", "default_sysmon", "default_sysmon_taskbar", "default_taskba
     capsule_border = "outline_variant"
     capsule_opacity = 0.79999998211860657
     capsule_radius = 0
-    center = [ "cpu", "sysmon", "ram", "temp", "group:g1" ]
+    center = [ "cat_2", "cpu", "sysmon", "ram", "temp", "group:g1" ]
     end = []
-    margin_ends = 352
+    margin_ends = 327
     position = "right"
     radius = 0
     reserve_space = false
@@ -479,10 +479,14 @@ popup_shadows = false
     remember_last_region = true
     skip_annotate_on_copy_save = true
 
+    [shell.session]
+    grid = true
+
 [theme]
-builtin = "Rosé Pine"
+builtin = "Tokyo-Night"
 community_palette = "Tokyo Night Storm"
 mode = "dark"
+source = "builtin"
 wallpaper_scheme = "faithful"
 
     [theme.templates]
@@ -510,13 +514,13 @@ wallpaper_scheme = "faithful"
     ]
 
 [wallpaper.default]
-path = "/home/ckjos/Pictures/Wallpapers/wallhaven/Themed/pine-tree_rose-pine.png"
+path = "/home/ckjos/Pictures/Wallpapers/wallhaven/wallhaven-w5dlj6.jpg"
 
 [wallpaper.last]
-path = "/home/ckjos/Pictures/Wallpapers/wallhaven/Themed/pine-tree_rose-pine.png"
+path = "/home/ckjos/Pictures/Wallpapers/wallhaven/wallhaven-w5dlj6.jpg"
 
 [wallpaper.monitors.HDMI-A-1]
-path = "/home/ckjos/Pictures/Wallpapers/wallhaven/Themed/pine-tree_rose-pine.png"
+path = "/home/ckjos/Pictures/Wallpapers/wallhaven/wallhaven-w5dlj6.jpg"
 
 [widget.active_window]
 display = "icon_only"
@@ -543,6 +547,9 @@ type = "ezequiel/mango_layouts:btn"
 
 [widget.cat]
 cat_color = "on_primary_container"
+type = "dotnetrob/cat:cat"
+
+[widget.cat_2]
 type = "dotnetrob/cat:cat"
 
 [widget.cat_3]
@@ -629,6 +636,7 @@ scale = 0.90000000000000013
 [widget.sysmon]
 custom_image = "/home/ckjos/Downloads/nvidia-svgrepo-com.svg"
 custom_image_colorize = true
+stat = "gpu_vram_used"
 visualization = "none"
 
 [widget.taskbar]
