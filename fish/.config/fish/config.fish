@@ -2,9 +2,9 @@
 #     # Commands to run in interactive sessions can go here
 # end
 
-function fish_greeting
-    fastfetch
-end
+# function fish_greeting
+#     fastfetch
+# end
 
 set fish_function_path ~/.config/fish/functions
 
