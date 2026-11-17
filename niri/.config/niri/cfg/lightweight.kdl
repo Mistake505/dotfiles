@@ -1,0 +1,11 @@
+animations {
+    off
+}
+
+blur {
+    off
+}
+
+shadow {
+    off
+}
