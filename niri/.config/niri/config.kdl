@@ -1,6 +1,7 @@
 include "./cfg/animation.kdl"
 include "./cfg/autostart.kdl"
-include "./cfg/keybindsWASD.kdl"
+// include "./cfg/keybindsWASD.kdl"
+include  "./cfg/keybindsHJKL.kdl"
 include "./cfg/input.kdl"
 include "./cfg/display.kdl"
 include "./cfg/layout.kdl"

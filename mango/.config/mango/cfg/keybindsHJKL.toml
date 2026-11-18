@@ -13,7 +13,7 @@
 "SUPER+q" = "killclient"
 
 # Noctalia specific keybinds.
-"SUPER+space"   = "spawn, noctalia msg panel-toggle launcher"
+"SUPER+D"   = "spawn, noctalia msg panel-toggle launcher"
 # "SUPER+s"       = "spawn, noctalia msg panel-toggle control-center"
 # "SUPER+SHIFT+s" = "spawn, noctalia msg settings-toggle"
 # "SUPER+w"       = "spawn, noctalia msg panel-toggle wallpaper"
@@ -53,16 +53,16 @@
 "SUPER+Up"    = "focusdir, up"
 "SUPER+Down"  = "focusdir, down"
 
-"SUPER+W"    = "focusdir, up"
-"SUPER+A"  = "focusdir, left"
-"SUPER+D" = "focusdir, right"
-"SUPER+S"  = "focusdir, down"
+"SUPER+H"  = "focusdir, left"
+"SUPER+J"  = "focusdir, down"
+"SUPER+K"    = "focusdir, up"
+"SUPER+L" = "focusdir, right"
 
 # Swap window
-"SUPER+SHIFT+W"    = "exchange_client, up"
-"SUPER+SHIFT+A"  = "exchange_client, left"
-"SUPER+SHIFT+S"  = "exchange_client, down"
-"SUPER+SHIFT+D" = "exchange_client, right"
+"SUPER+SHIFT+H"  = "exchange_client, left"
+"SUPER+SHIFT+J"  = "exchange_client, down"
+"SUPER+SHIFT+K"    = "exchange_client, up"
+"SUPER+SHIFT+L" = "exchange_client, right"
 
 "SUPER+SHIFT+Up"    = "exchange_client, up"
 "SUPER+SHIFT+Down"  = "exchange_client, down"
@@ -90,7 +90,7 @@
 # "SUPER+x" = "switch_proportion_preset"
 
 # Switch layout
-"SUPER+l" = "spawn, noctalia msg panel-toggle ezequiel/mango_layouts:panel"
+"SUPER+s" = "spawn, noctalia msg panel-toggle ezequiel/mango_layouts:panel"
 
 # Switch between workspaces
 "SUPER+1" = "view, 1, 0"
@@ -147,3 +147,9 @@
 "SUPER+btn_left" = "moveresize, curmove"
 # "btn_middle" = "togglemaximizescreen, 0"
 "SUPER+btn_right" = "moveresize, curresize"
+
+[gesturebind.default]
+"none+right+3" = "focusdir,right"
+"none+left+3" = "focusdir,left"
+"none+right+4" = "viewtoleft"
+"none+left+4" = "viewtoright"

@@ -7,3 +7,4 @@
 # xkb_rules_layout = "us"
 mouse_accel_profile = 1
 mouse_accel_speed = 0.2
+trackpad_natural_scrolling = 1;

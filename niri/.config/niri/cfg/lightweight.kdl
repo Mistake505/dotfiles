@@ -5,7 +5,8 @@ animations {
 blur {
     off
 }
-
-shadow {
-    off
+layout {
+    shadow {
+        off
+    }
 }
