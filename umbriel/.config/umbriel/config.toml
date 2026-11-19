@@ -17,7 +17,8 @@ files = [
     "cfg/appearance.toml",
     "cfg/effects.toml",
     "cfg/input.toml",
-    "cfg/keybinds.toml",
+    # "cfg/keybindsHJKL.toml",
+    "cfg/keybindsWASD.toml",
     "cfg/layout.toml",
     "cfg/misc.toml",
     "cfg/outputs.toml",
@@ -25,4 +26,4 @@ files = [
 ]
 
 [include.optional]
-files = []
+files = ["noctalia.toml"]

@@ -1,12 +1,15 @@
 include "./cfg/animation.kdl"
 include "./cfg/autostart.kdl"
-// include "./cfg/keybindsWASD.kdl"
-include  "./cfg/keybindsHJKL.kdl"
+
+include "./cfg/keybindsWASD.kdl"
+//include  "./cfg/keybindsHJKL.kdl"
+
 include "./cfg/input.kdl"
 include "./cfg/display.kdl"
 include "./cfg/layout.kdl"
 include "./cfg/rules.kdl"
 include "./cfg/misc.kdl"
+
 // include "./cfg/lightweight.kdl"
 
 include "noctalia.kdl"

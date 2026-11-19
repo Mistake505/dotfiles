@@ -38,36 +38,52 @@
 "Mod+Down" = "window-focus-down"
 "Mod+Up" = "window-focus-up"
 "Mod+Right" = "window-focus-right"
-"Mod+H" = "window-focus-left"
-"Mod+J" = "window-focus-down"
-"Mod+K" = "window-focus-up"
-"Mod+L" = "window-focus-right"
+
+"Mod+W" = "window-focus-up"
+"Mod+A" = "window-focus-left"
+"Mod+S" = "window-focus-down"
+"Mod+D" = "window-focus-right"
+
 "Mod+F1" = "window-focus-next"
+
 "Mod+Shift+Left" = "column-move-left"
 "Mod+Shift+Down" = "window-move-down"
 "Mod+Shift+Up" = "window-move-up"
 "Mod+Shift+Right" = "column-move-right"
 
+"Mod+Shift+W" = "window-move-up"
+"Mod+Shift+A" = "column-move-left"
+"Mod+Shift+S" = "window-move-down"
+"Mod+Shift+D" = "column-move-right"
+
 # Window state and layout
 "Mod+T" = { action = "window-toggle-floating", repeat = false }
 "Mod+Shift+T" = { action = "window-focus-switch-floating", repeat = false }
+
 "Mod+P" = { action = "window-toggle-pinned", repeat = false }
 "Mod+M" = { action = "window-toggle-maximize-to-edges", repeat = false }
-"Mod+F" = { action = "window-toggle-fullscreen", repeat = false }
-"Mod+Ctrl+F" = { action = "window-toggle-maximize", repeat = false }
+
+"Mod+F" = { action = "window-toggle-maximize", repeat = false }
+"Mod+SHIFT+F" = { action = "window-toggle-fullscreen", repeat = false }
+
 "Mod+R" = "window-cycle-primary-extent"
 "Mod+Shift+R" = "window-cycle-primary-extent-back"
+
 "Mod+Minus" = "window-modify-primary-extent -0.02"
 "Mod+Equal" = "window-modify-primary-extent +0.02"
+
 "Mod+Ctrl+Minus" = "window-modify-secondary-extent -0.02"
 "Mod+Ctrl+Equal" = "window-modify-secondary-extent +0.02"
+
 "Mod+Comma" = "window-consume-left"
 "Mod+Period" = "window-consume-right"
+
 "Mod+Ctrl+Comma" = "window-consume-from-left"
 "Mod+Ctrl+Period" = "window-consume-from-right"
+
 # Needs layout.mode = "dwindle".
 # "Mod+Alt+T" = "layout-toggle-split"
-"Mod+W" = { action = "column-toggle-tabbed", repeat = false }
+"Mod+K" = { action = "column-toggle-tabbed", repeat = false }
 "Mod+Alt+Right" = "column-focus-tab-next"
 "Mod+Alt+Left" = "column-focus-tab-previous"
 "Mod+WheelUp" = "window-focus-left"
